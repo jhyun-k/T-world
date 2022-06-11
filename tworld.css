@@ -1,0 +1,66 @@
+.wrap{width: 100%;border-bottom: 1px solid #eeeeee;}
+.inner{width: 1180px; height: 70px;margin: auto;}
+.header{display: flex; height: 70px;margin: auto;position: relative;padding:0px 0}
+.header .logo{background: url(./img/logo.png) no-repeat; width: 60px; height: 51px; text-indent: -9999px; font-size: 0;position: absolute; top:15px; left: -70px;background-size: 40px 40px;}
+
+.header-mid ul{display: flex;height: 33px; line-height: 33px;width: 750px;}
+.header-mid ul li{padding:20px 15px;font-size: 16px;font-weight: bold;margin: 0 5px;}
+.header-mid ul li:hover{color: red;}
+.header-right{display: flex; justify-content: space-around; }
+.header-right a{padding: 0 20px;}
+.header-right .gx{background: url(./img/5GX.png) no-repeat center center;width: 101px; height: 70px;background-size: 101px auto;margin-right: 10px;}
+.header-right .biz{background: url(./img/TWORLDBIZ.png) no-repeat center center;width:114px; height:70px;background-size: 114px auto;}
+.header-right .search{background: url(img/searcg.png) no-repeat center center; width: 80px; height: 80px; background-size: 36px auto;} 
+.header-right .mypage{background: url(img/mypage.png) no-repeat center center; width: 80px; height: 100%;background-size: 50px auto; position: relative;}
+.login-box{background-color: #fff; width: 400px; height: 200px; border: 1px solid #eeeeee; position: absolute; top: 70px; right: -145px; z-index: 1; padding: 40px 30px;display: none;}
+.login-box h1{font-size: 25px; font-weight: bold; margin-bottom: 30px;}
+.login-box .small-box{display: flex; flex-wrap: wrap;}
+.login-box .small-box p{ font-size: 20px; border: 1px solid #d5d3d3; width: 160px; text-align: center; margin: auto; height: 45px; line-height: 45px; margin-bottom: 20px;}
+.login-box .small-box .login{background-color: #ee2943; color: #fff;}
+ 
+.mypage:hover{background:url(img/zzin.png) center center no-repeat; background-size: 50px auto; width: 80px; height: 100%;background-color: #ee2943; box-sizing: border-box;z-index: 2;}
+/* 
+.mypage:hover::after{
+    content: '';
+    background: url('img/KakaoTalk_20220519_190623186_01.png') no-repeat -32px -193px;
+	width: 5px;
+	height: 7px;
+position: absolute; top: 50%; transform: translateY(-50%);left: 65px; display: block; transform: translateX(3px);transition: transform 1s linear;} */
+.mypage:hover +.login-box{display: block;}
+
+
+.gx::after{ content: '';
+	background: url('img/KakaoTalk_20220519_190623186_01.png') no-repeat -17px -193px;
+	width: 5px;
+	height: 7px;
+    text-indent: 10px;
+    display: block;
+    position: absolute; top: 50%; transform: translateY(-50%); left:110px;display: none
+    ;
+}
+.gx:hover{
+    transform: scale(0.8); transition: all 0.1s linear; }
+.gx:hover::after{display: block;}
+
+.biz:hover{transform: scale(0.9); transition: all 2ms linear;}
+.search:hover{transform: scale(0.95); transition:  2ms linear;}
+.vertical1{position: absolute; top: 50%; transform: translateY(-50%);right: 280px;  color: #d5d3d3; font-size: 14px;}
+.vertical2{position: absolute; top: 50%;transform: translateY(-50%); right: 110px; color: #d5d3d3;font-size: 20px;}
+
+
+
+.adot{margin: auto;}
+.adot{background: url(./img/adot.jpg) no-repeat ; width: 100%; height: 580px;background-size:cover ; position: fixed; top: 70px;}
+
+.arrow{font-size: 75px; background-color: #94939f6f; display: block; width: 90px; height: 90px; border-radius: 50%; text-align: center; color: rgba(255, 255, 255, 0.686);font-weight: 100; cursor: pointer;}
+.arrow i{font-size: 70px; color: #eeeeee;}
+.leftarrow{position: absolute; top: 300px; left: 25px;}
+.rightarrow{position: absolute; top: 300px; right: 55px;}
+
+.promotion ul{display: flex; height: 50px; background-color: rgba(254, 254, 254, 0.515); width:1440px; margin: auto;position: absolute; bottom: 150px; left: 50%; transform: translateX(-50%);box-sizing: border-box;justify-content: space-between;}
+.promotion ul li{font-size: 18px; text-align: center; line-height: 50px;position: relative; padding: 0 20px;}
+.promotion ul li::before{content: '|';color: #a7a1a1; font-size: 15px; position: absolute; top: 50%; transform: translateY(-50%); display: block; left: 0;} 
+.promotion li:first-child::before{display: none;}
+.promotion li:hover{background-color: #94939F; color: #fff;font-weight: bold; border-top:solid #333 4px;box-sizing: border-box;text-align: center; line-height: 50px;}
+.promotion .proarrow{background-color: #94939F; border-top: none;}
+.promotion .proarrow:hover{border-top: none;}
